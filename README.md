@@ -36,12 +36,12 @@ symbols *OR* hit a *left* parenthesis "(".
 
 Now repeat steps 2 and 3 until you've formed your declaration.  Here are some
 examples:
-
+```c
      int *p[];
-
-1) Find identifier.          int *p[];
-                                  ^
-   "p is"
+```
+1) Find identifier.          
+			     int *p[];
+                                  ^		"p is"
 
 2) Move right until out of symbols or right parenthesis hit.
                              int *p[];
