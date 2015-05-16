@@ -146,8 +146,9 @@ symbol on the left between these () and [] right-side symbols in order
 for the declaration to be legal.
 
 Here are some legal and illegal examples:
+---|---
 Expressions      |      Evaluates To
------------------|-------------------
+---|---
 int i;            |      an int
 int *p;           |     an int pointer (ptr to an int)
 int a[];           |     an array of ints
