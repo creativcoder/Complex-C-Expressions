@@ -39,10 +39,11 @@ examples:
 ```c
      int *p[];
 ```
-1) Find identifier.          
-			     int *p[];
-                                  ^		"p is"
-
+1) Find identifier.         
+```c
+			     int *p[];     -------->> "p is"
+                                  ^	
+```
 2) Move right until out of symbols or right parenthesis hit.
                              int *p[];
                                    ^^
