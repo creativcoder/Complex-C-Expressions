@@ -40,14 +40,14 @@ examples:
      int *p[];
 ```
 1) Find identifier.         
->
->			     int *p[];     -------->> "p is"                                                          
->                                 ^	
+>                                                                                                                    
+>      			     int *p[];     -------->> "p is"
+>                         ^                                                                                  	
 
 2) Move right until out of symbols or right parenthesis hit.
-                             int *p[];
-                                   ^^
-   "p is array of"
+>                                                                                                                    
+>      			     int *p[];     -------->> "p is an array of"
+>                         ^^   
 
 3) Can't move right anymore (out of symbols), so move left and find:
                              int *p[];
