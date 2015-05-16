@@ -50,16 +50,18 @@ examples:
 >                         ^^   
 
 3) Can't move right anymore (out of symbols), so move left and find:
-                             int *p[];
-                                 ^
-   "p is array of pointer to"
+>                                                                                                                    
+>      			     int *p[];     -------->> "p is array of pointer to"
+>                        ^   
 
 4) Keep going left and find:
-                             int *p[];
-                             ^^^
-   "p is array of pointer to int". 
+>                                                                                                                    
+>      			     int *p[];     -------->> "p is array of pointer to"
+>                    ^^^   
+   
    (or "p is an array where each element is of type pointer to int")
 
+-------------------------------------------------------------------------------------------------------
 Another example:
 
    int *(*func())();
